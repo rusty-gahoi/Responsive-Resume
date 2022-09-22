@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,3 +7,194 @@
 }
 
 /* Write CSS code below */
+.main-content {
+    display: grid;
+    grid-template-columns: 300px 700px;
+    height: 1000px;
+    /* border: 2px solid black; */
+    width: 90%;
+    margin: auto;
+
+}
+
+.left-section {
+    background-color: rgb(32, 72, 85);
+    grid-column: span 1;
+}
+
+.right-section {
+    background-color: rgb(252, 252, 236);
+    grid-column: span 1/span 2;
+
+}
+
+.left-content {
+    padding: 1rem;
+}
+
+.profile-image {
+    border: 5px solid white;
+    border-radius: 30%;
+    width: 60%;
+    display: block;
+    margin: auto;
+
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+
+}
+
+.designation {
+    color: rgb(171, 220, 244);
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgb(165, 164, 164);
+}
+
+.description {
+    color: white;
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+    line-height: 1.2rem;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.personal-details {
+    margin: 10px 15px;
+}
+
+.personal-details p {
+    margin-left: 7px;
+    color: white;
+}
+
+.icon1 {
+    color: rgb(167, 193, 241);
+}
+
+.detail {
+    display: flex;
+    margin-bottom: 6px;
+}
+
+.skills {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.skill-title {
+    margin-bottom: 15px;
+}
+
+.skill-item {
+    margin-bottom: 15px;
+
+}
+
+.skill-name {
+    font-size: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+
+}
+
+.progress-bar {
+    border: 1px solid white;
+    height: 4px;
+    background-color: white;
+}
+
+
+.right-main-content {
+    padding: 2rem 3rem;
+
+}
+
+.right-title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+
+}
+
+.masters {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 8px;
+
+}
+
+.bachelors {
+    display: flex;
+    padding: 8px;
+
+}
+
+.exp {
+    display: flex;
+}
+
+.para {
+    padding: 5px;
+}
+
+.about-sect {
+    margin-bottom: 30px;
+}
+
+.right-section h2 {
+    margin-bottom: 7px;
+}
+
+.education-sect {
+    margin-bottom: 22px;
+}
+
+.experience-detail {
+    padding: 8px;
+
+}
+.company{
+    
+    margin-right: 20px;
+
+}
+
+.para1 {
+    padding-right: 100px;
+}
+
+.project {
+    padding-left: 8px;
+}
+
+@media screen and (max-width: 673px) {
+    .main-content{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
